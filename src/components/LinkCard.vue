@@ -1,20 +1,32 @@
 <script setup>
-defineProps({
+import { useRouter } from "vue-router";
+import { useSandwichStore } from "@/stores/sandwich";
+
+const props = defineProps({
   title: String,
   description: String,
   price: String,
   image: String,
 });
+
+const router = useRouter();
+const store = useSandwichStore();
+
+const handleSelection = () => {
+  store.setOrder({
+    title: props.title,
+    price: props.price,
+    image: props.image,
+    description: props.description,
+  });
+
+  router.push("/Details");
+};
 </script>
 
 <template>
   <button
-    @click="
-      $router.push({
-        path: '/Details',
-        query: { name: title, price: price, img: image },
-      })
-    "
+    @click="handleSelection"
     class="relative group flex flex-row items-center gap-4 w-full rounded-2xl border border-gray-700 bg-gray-800 p-4 shadow-lg transition-all duration-300 hover:scale-[1.02] hover:border-blue-500 text-left"
   >
     <div

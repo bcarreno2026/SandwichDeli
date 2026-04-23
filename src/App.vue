@@ -9,6 +9,6 @@
 <style>
 body {
   margin: 0;
-  background-color: #020617; /* Matches the deep blue-black */
+  background-color: #020617;
 }
 </style>

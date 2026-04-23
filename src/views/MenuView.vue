@@ -12,7 +12,7 @@ const store = ref({
       image:
         "https://images.pexels.com/photos/16533148/pexels-photo-16533148.jpeg",
       description: "Classic sliced ham with fresh lettuce",
-      price: "6.75",
+      price: "6.35",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ const store = ref({
       image:
         "https://images.pexels.com/photos/8053714/pexels-photo-8053714.jpeg",
       description: "Spicy salami and melted provolone",
-      price: "7.50",
+      price: "7.55",
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ const store = ref({
       image:
         "https://images.pexels.com/photos/15362507/pexels-photo-15362507.jpeg",
       description: "Traditional beef bologna on white",
-      price: "5.25",
+      price: "5.00",
     },
     {
       id: 4,

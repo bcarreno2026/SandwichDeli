@@ -7,6 +7,7 @@ const props = defineProps({
   description: String,
   price: String,
   image: String,
+  ingredients: Array,
 });
 
 const router = useRouter();
@@ -18,8 +19,8 @@ const handleSelection = () => {
     price: props.price,
     image: props.image,
     description: props.description,
+    ingredients: props.ingredients,
   });
-
   router.push("/Details");
 };
 </script>

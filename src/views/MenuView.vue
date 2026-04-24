@@ -9,34 +9,34 @@ const store = ref({
     {
       id: 1,
       title: "Ham Sandwich",
-      image:
-        "https://images.pexels.com/photos/16533148/pexels-photo-16533148.jpeg",
-      description: "Classic sliced ham with fresh lettuce",
+      image: "/ham.jpg",
+      description: "Classic Ham Sandwich",
       price: "6.35",
+      ingredients: ["Fresh Bread", "Smoked Ham", "American Cheese", "Mayo"],
     },
     {
       id: 2,
       title: "Salami Sandwich",
-      image:
-        "https://images.pexels.com/photos/8053714/pexels-photo-8053714.jpeg",
-      description: "Spicy salami and melted provolone",
+      image: "/salami.jpg",
+      description: "Salami Sandwich",
       price: "7.55",
+      ingredients: ["French Bread", "Salami", "Pickes", "Union"],
     },
     {
       id: 3,
       title: "Classic Bologna",
-      image:
-        "https://images.pexels.com/photos/15362507/pexels-photo-15362507.jpeg",
-      description: "Traditional beef bologna on white",
+      image: "/classicbologna.jpg",
+      description: "Classic Bologna",
       price: "5.00",
+      ingredients: ["White Bread", "Bologna", "Mustard", "Pickles"],
     },
     {
       id: 4,
       title: "Wheat Bread Bologna",
-      image:
-        "https://images.pexels.com/photos/6416558/pexels-photo-6416558.jpeg",
-      description: "Healthy wheat bread and thick bologna",
+      image: "/wheatbologna.jpg",
+      description: "Wheat bread and thick bologna",
       price: "5.50",
+      ingredients: ["Wheat Bread", "Turkey Bologna", "Mustard", "Lettuce"],
     },
   ],
 });
@@ -64,6 +64,7 @@ const store = ref({
         :description="sandwich.description"
         :image="sandwich.image"
         :price="sandwich.price"
+        :ingredients="sandwich.ingredients"
       />
     </div>
 

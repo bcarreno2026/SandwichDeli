@@ -66,7 +66,7 @@ if (!order) {
           </h2>
           <div class="flex flex-col gap-3">
             <span
-              v-for="item in store.baseIngredients"
+              v-for="item in order?.ingredients"
               :key="item"
               class="w-full rounded-lg bg-blue-900/30 px-4 py-3 text-sm font-bold text-blue-300 border border-blue-500/20"
             >
